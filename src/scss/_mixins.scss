@@ -1,0 +1,4 @@
+@mixin typoConf ($fontSize, $colorTypo){
+    font-size: $fontSize;
+    color: $colorTypo;
+}

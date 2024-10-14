@@ -1,0 +1,18 @@
+@import './variables';
+@import './mixins';
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-footer;
+    height: 209px;
+        img {
+            width: 122px;
+        }
+}
+
+.text-color-white {
+    @include typoConf(24px, $text-color-with-background);
+}

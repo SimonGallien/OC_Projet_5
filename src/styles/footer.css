@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 209px;
+}
+.footer img {
+  width: 122px;
+}
+
+.text-color-white {
+  font-size: 24px;
+  color: white;
+}
+
+/*# sourceMappingURL=footer.css.map */

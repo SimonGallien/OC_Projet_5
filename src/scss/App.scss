@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import './variables';
+
+html, body {
+    height: 100%;
+    max-width: 100%;
+    margin:0;
+    padding:0;
+    font-family: 'Montserrat'
+}
+
+body {
+    display: flex;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+    width: $normal-width-content;
+    margin-left: auto;
+    margin-right: auto;
+}
