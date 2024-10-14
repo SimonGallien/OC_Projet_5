@@ -21,6 +21,7 @@ body {
 
 main {
     display: flex;
+    flex-direction: column;
     flex-grow: 1;
     width: $normal-width-content;
     margin-left: auto;

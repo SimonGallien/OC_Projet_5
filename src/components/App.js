@@ -5,8 +5,10 @@ import About from '../pages/About';
 import Error from '../pages/404';
 import Header from './Header';
 import Footer from './Footer';
+import Banner from './Banner';
 import '../styles/App.css';
 import '../styles/header.css';
+import '../styles/Banner.css';
 import '../styles/footer.css';
 
 function App() {
@@ -14,6 +16,7 @@ function App() {
     <Router>
         <Header />
         <main className='content'>
+        <Banner />
           <Routes>
             <Route path="/" element={<Home />}/>
             <Route path="/About" element={<About />}/>
