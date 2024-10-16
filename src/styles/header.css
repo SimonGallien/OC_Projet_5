@@ -10,21 +10,20 @@
   margin-left: auto;
   margin-right: auto;
 }
-.header nav {
+
+.navbar {
   display: flex;
   gap: 50px;
 }
-.header a {
+.navbar .navbar__link {
   font-size: 24px;
   color: #000000;
   font-weight: 500;
 }
-
-.active-page {
+.navbar .navbar__link--active {
   text-decoration: underline;
 }
-
-.inactive-page {
+.navbar .navbar__link--inactive {
   text-decoration: none;
 }
 

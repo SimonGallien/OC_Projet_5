@@ -6,11 +6,10 @@
   background-color: black;
   height: 209px;
 }
-.footer img {
+.footer .footer__img {
   width: 122px;
 }
-
-.text-color-white {
+.footer .footer__content {
   font-size: 24px;
   color: white;
 }
