@@ -1,0 +1,51 @@
+@import './variables';
+
+.aboutContent {
+  width: 1023px;
+  margin: auto;
+  margin-bottom: 43px;
+}
+
+.collapse {
+  margin-bottom: 30px;
+  list-style: none;
+  border-radius: 5px;
+
+  &--backgroundColor {
+    background-color: $background-cards;
+  }
+
+  &__containerTitle {
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &--backgroundColor {
+      background-color: $main-color;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+
+    &--color {
+      color: white;
+    }
+  }
+
+  &__txt {
+    display: block;
+    font-size: 18px;
+    padding: 25px 15px 25px 15px;
+    line-height: 1.5;
+
+    &_txt--hidden {
+      display: none;
+    }
+  }
+}

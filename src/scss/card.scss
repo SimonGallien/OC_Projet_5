@@ -1,0 +1,56 @@
+@import './variables';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 340px;
+  height: 340px;
+  position: relative;
+  //   background-color: $main-color;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0)
+    ); /* Filtre de dégradé */
+    border-radius: 10px 10px 10px 10px; /* Respecte les bords arrondis */
+  }
+
+  &__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+  }
+
+  &__containerTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: $main-color;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  &__title {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+  }
+
+  &__title--color {
+    color: $text-color-with-background;
+  }
+}

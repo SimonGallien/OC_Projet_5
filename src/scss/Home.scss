@@ -1,0 +1,16 @@
+@import './variables';
+
+.cardList {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  row-gap: 50px;
+  column-gap: 50px;
+  background-color: $background-cards;
+  border-radius: 25px;
+  padding: 56px 50px;
+
+  //   padding: 50px;
+}

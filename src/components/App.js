@@ -6,10 +6,15 @@ import Error from '../pages/404'
 import Header from './Header'
 import Footer from './Footer'
 import Banner from './Banner'
+import '../styles/reset.css'
 import '../styles/App.css'
 import '../styles/header.css'
 import '../styles/Banner.css'
 import '../styles/footer.css'
+import '../styles/card.css'
+import '../styles/Home.css'
+import '../styles/Collapse.css'
+import '../styles/404.css'
 
 function App() {
   return (
