@@ -5,9 +5,10 @@
   justify-content: space-around;
   margin-top: 139px;
   margin-bottom: 139px;
+  height: 100%;
 }
 .error__img404 {
-  width: 597px;
+  height: 263px;
 }
 .error__txt {
   margin-top: 139px;

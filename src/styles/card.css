@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .card {
   display: flex;
   flex-direction: column;
@@ -8,37 +7,37 @@
   height: 340px;
   position: relative;
 }
-.card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+.card__link {
+  display: flex;
+  flex-direction: column;
   height: 100%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)); /* Filtre de dégradé */
-  border-radius: 10px 10px 10px 10px; /* Respecte les bords arrondis */
+  border-radius: 10px;
+}
+.card__link:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
 }
 .card__img {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px;
   position: relative;
 }
-.card__containerTitle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-  width: 100%;
-  background-color: #ff6060;
-  border-radius: 0px 0px 10px 10px;
-}
 .card__title {
-  font-size: 14px;
+  position: absolute;
+  bottom: 0px;
+  font-size: 16px;
+  font-weight: bold;
   width: 100%;
+  height: 52px;
+  display: flex; /* Active Flexbox */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
   text-align: center;
-  z-index: 1;
+  padding: 5px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: rgba(0, 0, 0, 0.5); /* Fond noir avec 50% de transparence */
 }
 .card__title--color {
   color: white;

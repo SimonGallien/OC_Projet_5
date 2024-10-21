@@ -8,11 +8,12 @@
   margin-bottom: 30px;
   list-style: none;
   border-radius: 5px;
+  height: 52px;
 }
-.collapse--backgroundColor {
-  background-color: #f6f6f6;
+.collapse__active {
+  height: auto;
 }
-.collapse__containerTitle {
+.collapse__head {
   height: 52px;
   display: flex;
   justify-content: space-between;
@@ -20,25 +21,37 @@
   border-radius: 5px;
   padding-left: 20px;
   padding-right: 20px;
-}
-.collapse__containerTitle--backgroundColor {
   background-color: #ff6060;
 }
-.collapse__title {
+.collapse__head__title {
   font-size: 24px;
   font-weight: bold;
-}
-.collapse__title--color {
   color: white;
 }
-.collapse__txt {
-  display: block;
+.collapse__icon {
+  transform: rotate(0deg);
+  transition: all 0.3s cubic-bezier(0.32, 0, 0.07, 1);
+}
+.collapse__icon--Rotate {
+  transform: rotate(-180deg);
+  transition: all 0.3s cubic-bezier(0.32, 0, 0.07, 1);
+}
+.collapse__content {
+  height: 0;
+  border-radius: 0px 0px 5px 5px;
+  background-color: #f6f6f6;
   font-size: 18px;
   padding: 25px 15px 25px 15px;
   line-height: 1.5;
+  transform-origin: 0% 0%;
+  transform: scaleY(0);
+  transition: transform 0.3s cubic-bezier(0.32, 0, 0.07, 1);
 }
-.collapse__txt_txt--hidden {
-  display: none;
+.collapse__content--scale {
+  height: auto;
+  transform-origin: 0% 0%;
+  transform: scaleY(1);
+  transition: transform 0.3s cubic-bezier(0.32, 0, 0.07, 1);
 }
 
 /*# sourceMappingURL=Collapse.css.map */

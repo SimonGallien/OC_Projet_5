@@ -3,20 +3,31 @@ import arrow from '../assets/arrow_back_ios-24px 2.png'
 
 function Collapse({ title, content }) {
   // Utilisation de useState pour gérer l'état de l'élément
-  const [isOpen, setIsOpen] = useState(false) // Par défaut, l'élément est fermé
+  const [active, setActive] = useState(false) // Par défaut, l'élément est fermé
 
   function handleClick() {
-    setIsOpen(!isOpen) // Inverse l'état (fermé -> ouvert, ouvert -> fermé)
+    setActive(!active) // Inverse l'état (fermé -> ouvert, ouvert -> fermé)
   }
 
   return (
-    <li className="collapse collapse--backgroundColor">
-      <div className="collapse__containerTitle collapse__containerTitle--backgroundColor">
-        <h2 className="collapse__title collapse__title--color">{title}</h2>
-        <img src={arrow} alt="icone" onClick={() => handleClick()} />
+    <div className={`collapse ${active ? 'collapse__active' : ''}`}>
+      <div className="collapse__head">
+        <h2 className="collapse__head__title">{title}</h2>
+        <img
+          src={arrow}
+          alt="icon"
+          className={`collapse__icon ${active ? 'collapse__icon--Rotate' : ''}`} // Rotation de l'icône
+          onClick={() => handleClick()}
+        />
       </div>
-      {isOpen && <p className="collapse__txt">{content}</p>}
-    </li>
+      <div
+        className={`collapse__content ${
+          active ? 'collapse__content--scale' : ''
+        }`}
+      >
+        {content}
+      </div>
+    </div>
   )
 }
 

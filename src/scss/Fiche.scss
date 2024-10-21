@@ -1,0 +1,52 @@
+@import './variables';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.content__title {
+  font-size: 36px;
+  color: $main-color;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.content__Localisation {
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.owner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__profil {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  &__name {
+    font-size: 18px;
+    color: $main-color;
+  }
+
+  &__photo {
+    border-radius: 50%;
+    width: 64px;
+  }
+}
+
+.fiche_collapse {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapse_descrition,
+.collapse_equipement {
+  width: 582px;
+}
