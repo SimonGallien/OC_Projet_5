@@ -1,4 +1,9 @@
 @import './variables';
+@import './_collapse';
+@import './_carousel';
+@import './_tags';
+@import './_hostName';
+@import './_rating';
 
 .container {
   display: flex;

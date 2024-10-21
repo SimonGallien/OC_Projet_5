@@ -2,23 +2,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  margin-top: 139px;
-  margin-bottom: 139px;
-  height: 100%;
 }
 .error__img404 {
-  height: 263px;
+  margin-top: 99px;
+  margin-bottom: 139px;
+  height: 200px;
 }
 .error__txt {
-  margin-top: 139px;
-  margin-bottom: 139px;
   font-size: 36px;
   color: #ff6060;
   font-weight: 400;
 }
 .error__linkToHome {
   font-size: 18px;
+  margin-top: 139px;
+  margin-bottom: 139px;
 }
 
 /*# sourceMappingURL=404.css.map */

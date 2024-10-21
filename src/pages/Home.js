@@ -1,6 +1,7 @@
 import React from 'react'
 import cardList from '../datas/announce.json'
 import Card from '../components/Card'
+import '../styles/Home.css'
 
 function Home() {
   return (

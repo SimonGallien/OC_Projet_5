@@ -1,5 +1,3 @@
-import '../styles/HostName.css'
-
 function HostName({ name }) {
   // Diviser le nom et le prénom
   const [firstName, lastName] = name.split(' ') // Divise la chaîne en deux à partir de l'espace

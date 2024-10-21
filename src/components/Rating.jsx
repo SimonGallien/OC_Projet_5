@@ -1,7 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
-import '../styles/Rating.css'
 
 function Rating({ rating }) {
   const stars = Array(5).fill(0)
