@@ -1,0 +1,11 @@
+@import './variables';
+.rating__star {
+  &--1 {
+    color: $main-color;
+    font-size: 24px;
+  }
+  &--0 {
+    color: $background-star--0;
+    font-size: 24px;
+  }
+}
