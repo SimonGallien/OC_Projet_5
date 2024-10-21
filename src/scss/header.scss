@@ -19,15 +19,18 @@
   gap: 50px;
 
   .navbar__link {
-    @include typoConf(24px, $text-color);
-    font-weight: 500;
-  }
+    &--active {
+      text-decoration: underline;
+      @include typoConf(24px, $text-color);
+      font-weight: 500;
+      font-family: 'Montserrat';
+    }
 
-  .navbar__link--active {
-    text-decoration: underline;
-  }
-
-  .navbar__link--inactive {
-    text-decoration: none;
+    &--inactive {
+      text-decoration: none;
+      @include typoConf(24px, $text-color);
+      font-weight: 500;
+      font-family: 'Montserrat';
+    }
   }
 }

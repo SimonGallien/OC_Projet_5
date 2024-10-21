@@ -1,0 +1,17 @@
+@import './variables';
+
+.host__name {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  margin-right: 10px;
+  gap: 10px;
+}
+
+.host__firstName,
+.host__lastName {
+  display: block;
+  font-size: 18px;
+  color: $main-color;
+  font-weight: 400;
+}

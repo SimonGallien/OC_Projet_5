@@ -25,7 +25,16 @@ function Collapse({ title, content }) {
           active ? 'collapse__content--scale' : ''
         }`}
       >
-        {content}
+        {/* Si content est un tableau (comme pour les équipements), afficher sous forme de liste */}
+        {Array.isArray(content) ? (
+          <ul>
+            {content.map((item, index) => (
+              <li key={index}>{item}</li> // Affichage de chaque équipement sur une ligne
+            ))}
+          </ul>
+        ) : (
+          <p>{content}</p> // Sinon, on affiche le contenu en tant que texte simple (ex: description)
+        )}
       </div>
     </div>
   )

@@ -15,16 +15,19 @@
   display: flex;
   gap: 50px;
 }
-.navbar .navbar__link {
+.navbar .navbar__link--active {
+  text-decoration: underline;
   font-size: 24px;
   color: #000000;
   font-weight: 500;
-}
-.navbar .navbar__link--active {
-  text-decoration: underline;
+  font-family: "Montserrat";
 }
 .navbar .navbar__link--inactive {
   text-decoration: none;
+  font-size: 24px;
+  color: #000000;
+  font-weight: 500;
+  font-family: "Montserrat";
 }
 
 /*# sourceMappingURL=header.css.map */

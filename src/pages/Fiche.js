@@ -7,6 +7,7 @@ import cardList from '../datas/announce.json'
 import '../styles/Fiche.css'
 import Tags from '../components/Tags'
 import Rating from '../components/Rating'
+import HostName from '../components/HostName'
 
 function Fiche() {
   const { id } = useParams() // Récupère l'ID de l'URL
@@ -32,7 +33,7 @@ function Fiche() {
         </div>
         <div className="owner">
           <div className="owner__profil">
-            <span className="owner__name">{card.host.name}</span>
+            <HostName name={card.host.name} />
             <img src={card.host.picture} className="owner__photo" alt="host" />
           </div>
           <Rating rating={card.rating} />
