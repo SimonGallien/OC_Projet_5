@@ -18,12 +18,6 @@ function Carousel({ pictures }) {
 
   return (
     <div className="carousel">
-      <img
-        className="carousel__button carousel__button--prev"
-        onClick={prevSlide}
-        aria-label="Previous Slide"
-        src={arrow}
-      />
       <div className="carousel__slides">
         {pictures.map((slide, index) => (
           <div
@@ -43,12 +37,27 @@ function Carousel({ pictures }) {
           </div>
         ))}
       </div>
-      <img
-        className="carousel__button carousel__button--next"
-        onClick={nextSlide}
-        aria-label="Next Slide"
-        src={arrow}
-      />
+      {pictures.length > 1 && (
+        <span className="carousel__num">
+          {currentIndex + 1}/{pictures.length}
+        </span>
+      )}
+      {pictures.length > 1 && (
+        <img
+          className="carousel__button carousel__button--prev"
+          onClick={prevSlide}
+          aria-label="Previous Slide"
+          src={arrow}
+        />
+      )}
+      {pictures.length > 1 && (
+        <img
+          className="carousel__button carousel__button--next"
+          onClick={nextSlide}
+          aria-label="Next Slide"
+          src={arrow}
+        />
+      )}
     </div>
   )
 }

@@ -1,4 +1,10 @@
-@mixin typoConf ($fontSize, $colorTypo){
-    font-size: $fontSize;
-    color: $colorTypo;
+@mixin typoConf($fontSize, $colorTypo) {
+  font-size: $fontSize;
+  color: $colorTypo;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

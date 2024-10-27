@@ -6,7 +6,7 @@ function Card({ id, cover, title }) {
     <li className="card card--background">
       <Link to={`/Fiche/${id}`} className="card__link">
         <img className="card__img" src={cover} alt="annonce" />
-        <h2 className="card__title card__title--color">{title}</h2>
+        <h2 className="card__title">{title}</h2>
       </Link>
     </li>
   )

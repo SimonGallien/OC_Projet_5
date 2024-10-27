@@ -25,9 +25,9 @@ const Banner = () => {
 
   return (
     <div className="banner">
-      <img src={currentImage} alt="Banner" />
+      <img className="banner__img" src={currentImage} alt="Banner" />
       {location.pathname === '/' && (
-        <p className="text-banner">Chez vous, partout et ailleurs</p>
+        <p className="banner__text">Chez vous, partout et ailleurs</p>
       )}
     </div>
   )

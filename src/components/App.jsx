@@ -11,19 +11,21 @@ import '../styles/App.css'
 
 function App() {
   return (
-    <Router>
-      <Header />
-      <main className="content">
-        <Banner />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Fiche/:id" element={<Fiche />} />
-          <Route path="*" element={<Error />} />
-        </Routes>
-      </main>
-      <Footer />
-    </Router>
+    <>
+      <Router>
+        <Header />
+        <main className="content">
+          <Banner />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Fiche/:id" element={<Fiche />} />
+            <Route path="*" element={<Error />} />
+          </Routes>
+        </main>
+        <Footer />
+      </Router>
+    </>
   )
 }
 

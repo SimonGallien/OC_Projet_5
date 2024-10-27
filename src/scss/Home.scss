@@ -6,6 +6,7 @@
 
 .cardList {
   width: 100%;
+  max-width: 1240px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
@@ -16,4 +17,12 @@
   border-radius: 25px;
   padding: 56px 50px;
   margin-bottom: 50px;
+
+  @media (max-width: 1239px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
 }

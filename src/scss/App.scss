@@ -29,7 +29,8 @@ main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  width: $normal-width-content;
+  max-width: $normal-width-content;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }

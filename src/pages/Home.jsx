@@ -5,13 +5,13 @@ import '../styles/Home.css'
 
 function Home() {
   return (
-    <div>
+    <>
       <div className="cardList">
         {cardList.map(({ id, cover, title }) => (
           <Card key={id} id={id} cover={cover} title={title} />
         ))}
       </div>
-    </div>
+    </>
   )
 }
 

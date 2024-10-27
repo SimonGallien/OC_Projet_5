@@ -21,7 +21,7 @@ function Fiche() {
     )
   }
   return (
-    <div>
+    <>
       <Carousel pictures={card.pictures} />
       <div className="container">
         <div className="container__titleLocation">
@@ -47,7 +47,7 @@ function Fiche() {
           <Collapse title="Equipement" content={card.equipments} />
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
