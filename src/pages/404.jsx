@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom' // Import NavLink au lieu de Link
 import error404 from '../assets/404.jpg'
+import '../styles/404.css'
 
 function Error() {
   return (
