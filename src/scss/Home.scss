@@ -5,7 +5,7 @@
 @import './_banner.scss';
 
 .cardList {
-  width: 100%;
+  // width: 100%;
   max-width: 1240px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -16,13 +16,15 @@
   background-color: $background-cards;
   border-radius: 25px;
   padding: 56px 50px;
-  margin-bottom: 50px;
 
-  @media (max-width: 1239px) {
+  @media (max-width: $breakpoint-tablet) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: $breakpoint-mobile) {
     grid-template-columns: 1fr;
+    background-color: $main-background-color;
+    padding: 0;
+    row-gap: 20px;
   }
 }

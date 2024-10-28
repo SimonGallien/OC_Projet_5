@@ -6,6 +6,9 @@
   text-align: end;
   margin-right: 10px;
   gap: 10px;
+  @media (max-width: $breakpoint-mobile) {
+    gap: 5px;
+  }
 }
 
 .host__firstName,
@@ -14,4 +17,7 @@
   font-size: 18px;
   color: $main-color;
   font-weight: 400;
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 12px;
+  }
 }

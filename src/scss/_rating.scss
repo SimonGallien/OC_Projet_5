@@ -3,9 +3,15 @@
   &--1 {
     color: $main-color;
     font-size: 24px;
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 14px;
+    }
   }
   &--0 {
     color: $background-star--0;
     font-size: 24px;
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 14px;
+    }
   }
 }

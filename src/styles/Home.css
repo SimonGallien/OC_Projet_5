@@ -8,6 +8,18 @@
   margin: 45px auto 50px;
   padding: 0 20px;
 }
+@media (max-width: 1024px) {
+  .header {
+    margin-bottom: 40px;
+    margin-top: 37px;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    margin-bottom: 27px;
+    margin-top: 20px;
+  }
+}
 
 .header img {
   width: 210px;
@@ -52,18 +64,36 @@
 
 .footer {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: black;
+  height: 209px;
   min-height: 209px;
+  padding-top: 30px;
+  margin-top: 50px;
 }
-.footer .footer__img {
+.footer__image {
   width: 122px;
 }
-.footer .footer__content {
+.footer__content {
   font-size: 24px;
   color: white;
+  margin-top: 30px;
+}
+@media (max-width: 767px) {
+  .footer__content {
+    font-size: 12px;
+    width: 114px;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .footer {
+    padding-top: 0px;
+    margin-top: 27px;
+  }
 }
 
 .card {
@@ -119,7 +149,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 20px 43px;
+  margin: 0 0px 43px;
   overflow: hidden;
   position: relative;
   background-color: black;
@@ -164,7 +194,6 @@
 }
 
 .cardList {
-  width: 100%;
   max-width: 1240px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -175,9 +204,8 @@
   background-color: #f6f6f6;
   border-radius: 25px;
   padding: 56px 50px;
-  margin-bottom: 50px;
 }
-@media (max-width: 1239px) {
+@media (max-width: 1024px) {
   .cardList {
     grid-template-columns: 1fr 1fr;
   }
@@ -185,6 +213,9 @@
 @media (max-width: 767px) {
   .cardList {
     grid-template-columns: 1fr;
+    background-color: white;
+    padding: 0;
+    row-gap: 20px;
   }
 }
 

@@ -10,6 +10,11 @@
   justify-content: space-between;
   margin-top: 30px;
   margin-bottom: 30px;
+  @media (max-width: $breakpoint-mobile) {
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .content {
@@ -18,15 +23,28 @@
     color: $main-color;
     font-weight: 400;
     margin-bottom: 10px;
+    @media (max-width: $breakpoint-tablet) {
+      font-size: 24px;
+    }
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 18px;
+    }
   }
 
   &__Localisation {
     font-size: 26px;
     font-weight: 400;
+    @media (max-width: $breakpoint-tablet) {
+      font-size: 20px;
+    }
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 14px;
+    }
   }
 
   &__tags {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     margin-top: 30px;
   }
@@ -52,15 +70,30 @@
   &__photo {
     border-radius: 50%;
     width: 64px;
+    @media (max-width: $breakpoint-mobile) {
+      width: 32px;
+    }
+  }
+  @media (max-width: $breakpoint-mobile) {
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 20px;
   }
 }
 
 .fiche_collapse {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
+  @media (max-width: $breakpoint-mobile) {
+    flex-direction: column;
+  }
 }
 
 .collapse_descrition,
 .collapse_equipement {
   width: 582px;
+  @media (max-width: $breakpoint-mobile) {
+    width: 100%;
+  }
 }

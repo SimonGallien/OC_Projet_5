@@ -2,16 +2,29 @@
 @import './mixins';
 
 .footer {
-  display: flex;
+  @include flex-center;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: $background-footer;
+  height: 209px;
   min-height: 209px;
-  .footer__img {
+  padding-top: 30px;
+  margin-top: 50px;
+  &__image {
     width: 122px;
   }
-  .footer__content {
+  &__content {
     @include typoConf(24px, $text-color-with-background);
+    margin-top: 30px;
+
+    @media (max-width: $breakpoint-mobile) {
+      font-size: 12px;
+      width: 114px;
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+  @media (max-width: $breakpoint-mobile) {
+    padding-top: 0px;
+    margin-top: 27px;
   }
 }

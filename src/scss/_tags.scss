@@ -12,4 +12,7 @@
   font-weight: bold;
   font-size: 14px;
   border-radius: 10px;
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 10px;
+  }
 }

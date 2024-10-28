@@ -1,4 +1,18 @@
+@import './variables';
+@import './mixins';
 @import './_header';
 @import './_footer';
 @import './_banner.scss';
 @import './_collapse';
+
+.aboutContent {
+  max-width: 1023px;
+  width: 100%;
+  @include flex-center;
+  flex-direction: column;
+  margin: auto;
+  gap: 30px;
+  @media (max-width: $breakpoint-mobile) {
+    gap: 20px;
+  }
+}

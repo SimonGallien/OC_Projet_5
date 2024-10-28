@@ -40,10 +40,10 @@ function Fiche() {
         </div>
       </div>
       <div className="fiche_collapse">
-        <div className="collapse_descrition">
+        <div className="collapse collapse_descrition">
           <Collapse title="Description" content={card.description} />
         </div>
-        <div className="collapse_equipement">
+        <div className="collapse collapse_equipement">
           <Collapse title="Equipement" content={card.equipments} />
         </div>
       </div>
