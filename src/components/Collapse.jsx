@@ -10,7 +10,7 @@ function Collapse({ title, content }) {
   }
 
   return (
-    <div className={`collapse ${active ? 'collapse__active' : ''}`}>
+    <div className="collapse">
       <div className="collapse__head">
         <h2 className="collapse__head__title">{title}</h2>
         <img

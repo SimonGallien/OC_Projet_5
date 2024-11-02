@@ -51,14 +51,14 @@
 
   &__content {
     max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.2s ease;
     overflow: hidden;
     border-radius: 0px 0px 5px 5px;
     background-color: $background-cards;
     font-size: 18px;
     padding: 0 15px;
     line-height: 1.5;
-    opacity: 0;
-    transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.2s ease;
 
     &--scale {
       max-height: 500px; // Ajuste selon le contenu

@@ -6,7 +6,7 @@ import Fiche from '../pages/Fiche'
 import Error from '../pages/404'
 import Header from './Header'
 import Footer from './Footer'
-import Banner from './Banner'
+// import Banner from './Banner'
 import '../styles/App.css'
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <Router>
         <Header />
         <main className="content">
-          <Banner />
+          {/* <Banner /> */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/About" element={<About />} />

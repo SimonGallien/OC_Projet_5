@@ -18,25 +18,17 @@ function Carousel({ pictures }) {
 
   return (
     <div className="carousel">
-      <div className="carousel__slides">
-        {pictures.map((slide, index) => (
-          <div
-            key={index}
-            className={`carousel__slide ${
-              index === currentIndex ? 'active' : ''
-            }`}
-          >
-            {/* Afficher les images directement */}
-            {index === currentIndex && (
-              <img
-                src={slide}
-                alt={`Slide ${index + 1}`}
-                className="carousel__image"
-              />
-            )}
-          </div>
-        ))}
-      </div>
+      {pictures.map(
+        (slide, index) =>
+          index === currentIndex && (
+            <img
+              key={index}
+              src={slide}
+              alt={`Slide ${index + 1}`}
+              className="carousel__image"
+            />
+          )
+      )}
       {pictures.length > 1 && (
         <span className="carousel__num">
           {currentIndex + 1}/{pictures.length}
